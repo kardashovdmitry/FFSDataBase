@@ -1,0 +1,6 @@
+<apex:component >
+    <apex:attribute name="s" type="string" default="Default value for S attribute" description="test" />
+    <div style="display: inline-block; padding: 10px; border: 1px solid #ff0000;">
+        {!s}
+    </div>
+</apex:component>

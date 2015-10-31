@@ -1,0 +1,40 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "SearchMeasurementKeyword", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 3
+            }, 
+            "type": "String"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "MeasurementsController", 
+    "tableDeclaration": {
+        "type": "MeasurementsController", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "MeasurementsController"
+    }, 
+    "key": "01p28000004D4uoAAC", 
+    "variables": [], 
+    "id": "01p28000004D4uoAAC", 
+    "methods": []
+}

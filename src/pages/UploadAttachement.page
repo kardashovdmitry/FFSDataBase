@@ -1,0 +1,19 @@
+<apex:page controller="UploadAttachementTestController">
+
+	<apex:form enctype="multipart/form-data">
+		<apex:pageMessages />
+
+		<apex:outputLabel value="File Name" for="fileName"/>
+		<apex:inputText value="{!attachment.name}" id="fileName"/><br />
+
+		<apex:outputLabel value="File" for="file"/>
+		<apex:inputFile value="{!attachment.body}" filename="{!attachment.name}" id="file"/><br />
+
+		<apex:outputLabel value="Description" for="description"/><br />
+		<apex:inputTextarea value="{!attachment.description}" id="description"/><br />
+
+		<apex:commandButton action="{!upload}" value="Save"/>
+
+	</apex:form>
+
+</apex:page>

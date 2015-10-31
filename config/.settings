@@ -1,0 +1,19 @@
+{
+    "username": "kardashovdima@gmail.com", 
+    "project_name": "FFSDataBase", 
+    "org_url": "", 
+    "namespace": "", 
+    "metadata_container": "1dc28000000OOpuAAG", 
+    "environment": "production", 
+    "workspace": "E:\\workspace", 
+    "id": "JHRR1MPH81ANG2RF00XFEQZM9PC6EO3L", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

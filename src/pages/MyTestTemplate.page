@@ -1,0 +1,17 @@
+<apex:page showHeader="false" standardStylesheets="false" >
+
+    <div style="padding: 10px; border: 1px solid #0000ff;">
+        <h3>Header</h3>
+        <apex:insert name="block_1" />
+    </div>
+    <div style="padding: 10px; border: 1px solid #0000ff;">
+        <h3>Body</h3>
+        <apex:insert name="block_2" />       
+
+    </div>
+    <div style="padding: 10px; border: 1px solid #0000ff;">
+         <h3>Footer</h3>
+        <apex:insert name="block_3" />     
+    </div>
+
+</apex:page>

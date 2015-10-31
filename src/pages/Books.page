@@ -1,0 +1,61 @@
+<apex:page controller="BooksController" >
+
+    <h1>Books</h1>
+
+    <apex:form >
+
+        <apex:inputText value="{!SearchBookKeyword}" />
+        <apex:commandButton action="{!SearchBooks}" value="Search" rerender="BookTableBox" status="SearchStatus"/>
+        <apex:actionStatus id="SearchStatus">
+            <apex:facet name="start"><img src="/img/loading.gif" alt="" /></apex:facet>
+            <apex:facet name="stop"></apex:facet>
+        </apex:actionStatus>
+
+        <apex:outputPanel layout="block" id="BookTableBox">
+            <apex:panelGrid columns="7">
+                <apex:commandButton action="{!setCon.first}" status="PaginationStatus" reRender="BookTableBox" value="|<" disabled="{!!setCon.hasPrevious}" title="First Page"/>
+                <apex:commandButton action="{!setCon.previous}" status="PaginationStatus" reRender="BookTableBox" value="<" disabled="{!!setCon.hasPrevious}" title="Previous Page"/>
+                <apex:commandButton action="{!setCon.next}" status="PaginationStatus" reRender="BookTableBox" value=">" disabled="{!!setCon.hasNext}" title="Next Page"/>
+                <apex:commandButton action="{!setCon.last}" status="PaginationStatus" reRender="BookTableBox" value=">|" disabled="{!!setCon.hasNext}" title="Last Page"/>
+                <apex:outputText >{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,(setCon.pageNumber * size))} of {!noOfRecords}</apex:outputText>
+                <apex:actionStatus id="PaginationStatus">
+                    <apex:facet name="start"><img src="/img/loading.gif" alt="" /></apex:facet>
+                    <apex:facet name="stop"></apex:facet>
+                </apex:actionStatus>
+            </apex:panelGrid>
+            <table id="BookTable">
+                <tr>
+                    <th>Name</th>
+                    <th>ISBN</th>
+                    <th>Date Of Publication</th>
+                    <th>Author</th>
+                    <th></th>
+                </tr>
+                <apex:repeat value="{!Books}" var="book">
+                    <tr>
+                        <td>
+                            <apex:outputField value="{!book.Name}"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{!book.ISBN__c}"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{!book.Date_of_Publication__c}"/>
+                        </td>
+                        <td>
+                            <apex:repeat value="{!book.Book_Author__r}" var="author">
+                                <apex:outputField value="{!author.Author__r.Name}"/> <br />
+                            </apex:repeat>
+                        </td>
+                        <td>
+                            <a href="#">Edit</a><br />
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </apex:outputPanel>
+
+    </apex:form>
+
+</apex:page>

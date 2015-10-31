@@ -1,0 +1,21 @@
+<apex:page sidebar="false" showHeader="true">
+    <h1> {! $User.FirstName & ' ' & $User.LastName} </h1>
+    <p> Today's Date is {!TODAY()} </p>
+    <p> Next week it will be{!TODAY() + 7} </p>
+    
+    <c:MyTestComponent />
+    <c:MyTestComponent s="Custom Value!" />
+<!--
+<apex:pageBlock title="A block title">
+    <apex:pageBlockSection title="A section title">
+        I'm three components deep!
+    </apex:pageBlockSection>
+    
+    <apex:pageBlockSection title="A new section">
+        A new section
+    </apex:pageBlockSection>
+</apex:pageBlock>
+  
+  <h1>Hello world</h1> -->
+  
+</apex:page>

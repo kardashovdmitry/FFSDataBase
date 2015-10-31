@@ -1,0 +1,61 @@
+<apex:page controller="MeasurementsController" showHeader="false"
+standardStylesheets="false" sidebar="false"  docType="html-5.0">
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Measurements1</title>
+        <apex:stylesheet value="{!URLFOR($Resource.bootStrap,
+        'bootstrap-3.3.5-dist/css/bootstrap.css')}" />
+    </head>
+    <body>
+
+        <h1>Books</h1>
+        <apex:form >
+        <apex:inputText value="{!SearchMeasurementKeyword}" />
+        <apex:commandButton action="{!SearchMeasurements}" value="Search" rerender="MeasurementTableBox" status="SearchStatus"/>
+        <apex:actionStatus id="SearchStatus">
+        <apex:facet name="start"><img src="/img/loading.gif" alt="" /></apex:facet>
+        <apex:facet name="stop"></apex:facet>
+        </apex:actionStatus>
+        <apex:outputPanel layout="block" id="MeasurementTableBox">
+        <apex:panelGrid columns="7">
+        <apex:commandButton action="{!setCon.first}" status="PaginationStatus" reRender="MeasurementTableBox" value="|<" disabled="{!!setCon.hasPrevious}" title="First Page"/>
+        <apex:commandButton action="{!setCon.previous}" status="PaginationStatus" reRender="MeasurementTableBox" value="<" disabled="{!!setCon.hasPrevious}" title="Previous Page"/>
+        <apex:commandButton action="{!setCon.next}" status="PaginationStatus" reRender="MeasurementTableBox" value=">" disabled="{!!setCon.hasNext}" title="Next Page"/>
+        <apex:commandButton action="{!setCon.last}" status="PaginationStatus" reRender="MeasurementTableBox" value=">|" disabled="{!!setCon.hasNext}" title="Last Page"/>
+        <apex:outputText >{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,(setCon.pageNumber * size))} of {!noOfRecords}</apex:outputText>
+        <apex:actionStatus id="PaginationStatus">
+        <apex:facet name="start"><img src="/img/loading.gif" alt="" /></apex:facet>
+        <apex:facet name="stop"></apex:facet>
+        </apex:actionStatus>
+        </apex:panelGrid>
+        <table id="MeasurementTable">
+            <tr>
+                <th>Name</th>
+                
+            </tr>
+            <apex:repeat value="{!Measurements}" var="Measurement">
+            <tr>
+                <td>
+                    <apex:outputField value="{!Measurement.Name}"/>
+                </td>
+                
+                <td>
+                    <a href="#">Edit</a><br />
+                    <a href="#">Delete</a>
+                </td>
+            </tr>
+            </apex:repeat>
+        </table>
+        </apex:outputPanel>
+        </apex:form>
+    </body>
+    <style>
+            
+            
+            body{
+                background-color: #f8f8f8;
+            }
+    </style>
+</html>
+</apex:page>

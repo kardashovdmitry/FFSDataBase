@@ -1,0 +1,15 @@
+<apex:page showHeader="false" standardStylesheets="false" >
+
+    <apex:composition template="MyTestTemplate">
+        <apex:define name="block_1">
+            <p>Content for Block_1</p>
+        </apex:define>
+        <apex:define name="block_2">
+            <p>Content for Block_2</p>
+        </apex:define>
+        <apex:define name="block_3">
+            <p>Content for Block_3</p>
+        </apex:define>            
+    </apex:composition>
+
+</apex:page>

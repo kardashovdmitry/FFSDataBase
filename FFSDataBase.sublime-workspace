@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"setNull"
+			],
+			[
+				"S",
+				"SObject	[Standard Apex Class]"
+			],
+			[
+				"v",
+				"viscosity"
+			],
+			[
+				"D",
+				"Decimal	[Standard Apex Class]"
+			],
+			[
+				"a",
+				"alt	(String)"
+			],
+			[
+				"sty",
+				"styleClass	(String)"
+			],
+			[
+				"i",
+				"apex:inputField"
+			],
+			[
+				"s",
+				"apex:stylesheet"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"va",
+				"var	(String)"
+			],
+			[
+				"st",
+				"standardStylesheets	(Boolean)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/pages/MeasurementsPage.page",
+			"settings":
+			{
+				"buffer_size": 2754,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/MeasurementsPageWithCustomController.page",
+			"settings":
+			{
+				"buffer_size": 7286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/MeasurementsController.cls",
+			"settings":
+			{
+				"buffer_size": 2144,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"G",
+				"Github: Plugin Settings"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"h",
+				"HTMLPrettify"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/workspace/FFSDataBase",
+		"/E/workspace/FFSDataBase/src",
+		"/E/workspace/FFSDataBase/src/classes",
+		"/E/workspace/FFSDataBase/src/components",
+		"/E/workspace/FFSDataBase/src/pages",
+		"/E/workspace/FFSDataBase/src/triggers"
+	],
+	"file_history":
+	[
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/User/Github Tools.sublime-settings",
+		"/C/Users/Dmitry/Desktop/Measurement/css/bootstrap.css",
+		"/C/Users/Dmitry/Desktop/atmWork.page",
+		"/C/Users/Dmitry/Desktop/Measurement/Measurement.html",
+		"/E/workspace/FFSDataBase/src/classes/MeasurementsController.cls",
+		"/C/Users/Dmitry/Desktop/atmWork.txt",
+		"/C/Users/Dmitry/Desktop/Measurement.html",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/README.md",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/E/workspace/FFSDataBase/src/classes/BooksController.cls",
+		"/E/workspace/Warehouse/src/classes/TestDeleteRestrictInvoice.cls-meta.xml",
+		"/E/workspace/Warehouse/src/classes/InvoiceUtilities.cls-meta.xml",
+		"/C/Users/Dmitry/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/E/Дима/Учёба/5 курс/lab_2/lab_2/stdafx.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/pages/MeasurementsPage.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								858
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 354.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/pages/MeasurementsPageWithCustomController.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3027,
+								3027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/classes/MeasurementsController.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2144,
+								2144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 603.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "FFSDataBase.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
